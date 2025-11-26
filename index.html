@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Theme Toggle</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Moon Icon -->
+    <div class="moon-icon-holder icon-holder">
+      <svg viewBox="0 0 24 24" 
+        class="moon-icon sidebar-button"
+        data-tooltip="Change to dark mode"
+        role="button" tabindex="0" aria-pressed="false" aria-label="Enable dark theme"
+        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" fill="#414853" />
+        <circle cx="8" cy="8" r="1.5" fill="#242629" />
+        <circle cx="16" cy="7" r="1" fill="#242629" />
+        <circle cx="14" cy="16" r="1.2" fill="#242629" />
+        <circle cx="9" cy="17" r="0.8" fill="#242629" />
+      </svg>
+      <span class="tooltiptext">Change to night mode</span>
+    </div>
+
+    <div class="sun-icon-holder icon-holder">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="sidebar-button sun-icon"
+        data-tooltip="Change to light mode"
+        role="button" tabindex="0" aria-pressed="false" aria-label="Enable light theme" fill="#fcda79">
+        <path d="M 24.90625 3.96875 C 24.863281 3.976563 24.820313 3.988281 24.78125 4 C 24.316406 4.105469 23.988281 4.523438 24 5 L 24 11 C 23.996094 11.359375 24.183594 11.695313 24.496094 11.878906 C 24.808594 12.058594 25.191406 12.058594 25.503906 11.878906 C 25.816406 11.695313 26.003906 11.359375 26 11 L 26 5 C 26.011719 4.710938 25.894531 4.433594 25.6875 4.238281 C 25.476563 4.039063 25.191406 3.941406 24.90625 3.96875 Z M 10.65625 9.84375 C 10.28125 9.910156 9.980469 10.183594 9.875 10.546875 C 9.769531 10.914063 9.878906 11.304688 10.15625 11.5625 L 14.40625 15.8125 C 14.648438 16.109375 15.035156 16.246094 15.410156 16.160156 C 15.78125 16.074219 16.074219 15.78125 16.160156 15.410156 C 16.246094 15.035156 16.109375 14.648438 15.8125 14.40625 L 11.5625 10.15625 C 11.355469 9.933594 11.054688 9.820313 10.75 9.84375 C 10.71875 9.84375 10.6875 9.84375 10.65625 9.84375 Z M 39.03125 9.84375 C 38.804688 9.875 38.59375 9.988281 38.4375 10.15625 L 34.1875 14.40625 C 33.890625 14.648438 33.753906 15.035156 33.839844 15.410156 C 33.925781 15.78125 34.21875 16.074219 34.589844 16.160156 C 34.964844 16.246094 35.351563 16.109375 35.59375 15.8125 L 39.84375 11.5625 C 40.15625 11.265625 40.246094 10.800781 40.0625 10.410156 C 39.875 10.015625 39.460938 9.789063 39.03125 9.84375 Z M 24.90625 15 C 24.875 15.007813 24.84375 15.019531 24.8125 15.03125 C 24.75 15.035156 24.6875 15.046875 24.625 15.0625 C 24.613281 15.074219 24.605469 15.082031 24.59375 15.09375 C 19.289063 15.320313 15 19.640625 15 25 C 15 30.503906 19.496094 35 25 35 C 30.503906 35 35 30.503906 35 25 C 35 19.660156 30.746094 15.355469 25.46875 15.09375 C 25.433594 15.09375 25.410156 15.0625 25.375 15.0625 C 25.273438 15.023438 25.167969 15.003906 25.0625 15 C 25.042969 15 25.019531 15 25 15 C 24.96875 15 24.9375 15 24.90625 15 Z M 24.9375 17 C 24.957031 17 24.980469 17 25 17 C 25.03125 17 25.0625 17 25.09375 17 C 29.46875 17.050781 33 20.613281 33 25 C 33 29.421875 29.421875 33 25 33 C 20.582031 33 17 29.421875 17 25 C 17 20.601563 20.546875 17.035156 24.9375 17 Z M 4.71875 24 C 4.167969 24.078125 3.78125 24.589844 3.859375 25.140625 C 3.9375 25.691406 4.449219 26.078125 5 26 L 11 26 C 11.359375 26.003906 11.695313 25.816406 11.878906 25.503906 C 12.058594 25.191406 12.058594 24.808594 11.878906 24.496094 C 11.695313 24.183594 11.359375 23.996094 11 24 L 5 24 C 4.96875 24 4.9375 24 4.90625 24 C 4.875 24 4.84375 24 4.8125 24 C 4.78125 24 4.75 24 4.71875 24 Z M 38.71875 24 C 38.167969 24.078125 37.78125 24.589844 37.859375 25.140625 C 37.9375 25.691406 38.449219 26.078125 39 26 L 45 26 C 45.359375 26.003906 45.695313 25.816406 45.878906 25.503906 C 46.058594 25.191406 46.058594 24.808594 45.878906 24.496094 C 45.695313 24.183594 45.359375 23.996094 45 24 L 39 24 C 38.96875 24 38.9375 24 38.90625 24 C 38.875 24 38.84375 24 38.8125 24 C 38.78125 24 38.75 24 38.71875 24 Z M 15 33.875 C 14.773438 33.90625 14.5625 34.019531 14.40625 34.1875 L 10.15625 38.4375 C 9.859375 38.679688 9.722656 39.066406 9.808594 39.441406 C 9.894531 39.8125 10.1875 40.105469 10.558594 40.191406 C 10.933594 40.277344 11.320313 40.140625 11.5625 39.84375 L 15.8125 35.59375 C 16.109375 35.308594 16.199219 34.867188 16.039063 34.488281 C 15.882813 34.109375 15.503906 33.867188 15.09375 33.875 C 15.0625 33.875 15.03125 33.875 15 33.875 Z M 34.6875 33.875 C 34.3125 33.941406 34.011719 34.214844 33.90625 34.578125 C 33.800781 34.945313 33.910156 35.335938 34.1875 35.59375 L 38.4375 39.84375 C 38.679688 40.140625 39.066406 40.277344 39.441406 40.191406 C 39.8125 40.105469 40.105469 39.8125 40.191406 39.441406 C 40.277344 39.066406 40.140625 38.679688 39.84375 38.4375 L 35.59375 34.1875 C 35.40625 33.988281 35.148438 33.878906 34.875 33.875 C 34.84375 33.875 34.8125 33.875 34.78125 33.875 C 34.75 33.875 34.71875 33.875 34.6875 33.875 Z M 24.90625 37.96875 C 24.863281 37.976563 24.820313 37.988281 24.78125 38 C 24.316406 38.105469 23.988281 38.523438 24 39 L 24 45 C 23.996094 45.359375 24.183594 45.695313 24.496094 45.878906 C 24.808594 46.058594 25.191406 46.058594 25.503906 45.878906 C 25.816406 45.695313 26.003906 45.359375 26 45 L 26 39 C 26.011719 38.710938 25.894531 38.433594 25.6875 38.238281 C 25.476563 38.039063 25.191406 37.941406 24.90625 37.96875 Z"/>
+      </svg>
+      <span class="tooltiptext">Change to day mode</span>
+    </div>
+
+    <!-- Sun Icon -->
+    
+    <div class="icon-holder">
+      <button class="sidebar-btn active" data-target="home">🏠</button>
+      <span class="tooltiptext">Home</span>
+    </div>
+    <div class="icon-holder">
+      <button class="sidebar-btn" data-target="skills">💡</button>
+      <span class="tooltiptext">Skills</span>
+    </div>
+    <div class="icon-holder">
+      <button class="sidebar-btn" data-target="experience">💼</button>
+      <span class="tooltiptext">Experience</span>
+    </div>
+  </div>
+
+  <!-- Right-side panels -->
+  <div class="right-panels">
+    <section id="home" class="panel">
+      <h1>About me</h1>
+      <br>
+      <h3>Motivated and detail-oriented aspiring Front-End / Full-Stack Developer with a strong foundation in modern web technologies, database systems, and user-focused design. Experienced in both collaborative and independent work environments, with a proven ability to adapt, learn quickly, and solve problems efficiently. Passionate about building clean, responsive interfaces and continuously improving technical skills through hands-on projects.</h3>
+    </section>
+
+    <section id="skills" class="panel hidden">
+      <h1>Skills</h1>
+
+      <div class="skill-dropdown">
+        <button class="dropdown-btn">Front-End Development</button>
+        <div class="dropdown-content">
+          <p><b>Languages:</b> HTML5, CSS3, JavaScript (ES6+), TypeScript
+            <br>
+            <b>Frameworks & Libraries:</b> React, Vue.js, Angular, jQuery
+            <br>
+            <b>Styling & UI:</b> Tailwind CSS (basic), Material UI, Sass/SCSS
+            <br>
+            <b>Testing:</b> Cypress
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-dropdown">
+        <button class="dropdown-btn">Back-End Development</button>
+        <div class="dropdown-content">
+          <p><b>Languages:</b> Node.js, Python, PHP, Java</p>
+        </div>
+      </div>
+
+      <div class="skill-dropdown">
+        <button class="dropdown-btn">Databases</button>
+        <div class="dropdown-content">
+          <p>- MySQL <br> - PostgreSQL <br> - MongoDB <br> - SQLite</p>
+        </div>
+      </div>
+
+      <div class="skill-dropdown">
+        <button class="dropdown-btn">Tools & Technologies</button>
+        <div class="dropdown-content">
+          <p>- Git/GitHub <br> - Linux/Bash <br> - REST APIs <br> - GraphQL</p>
+        </div>
+      </div>
+
+      <div class="skill-dropdown">
+        <button class="dropdown-btn">Cloud Platforms</button>
+        <div class="dropdown-content">
+          <p>AWS</p>
+        </div>
+      </div>
+
+      <div class="skill-dropdown">
+        <button class="dropdown-btn">Soft Skills</button>
+        <div class="dropdown-content">
+          <p> - Communication<br> - Teamwork<br>  - Problem-solving <br> - Adaptability <br> - Time Management <br> - Attention to Detail <br> - Self-Motivation <br> - Critical Thinking <br> - Organization</p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="experience" class="panel hidden">
+      <h1>Experience</h1>
+      <br>
+      <div class="skill-dropdown">
+        <button class="dropdown-btn">Schooling</button>
+        <div class="dropdown-content">
+          <p>
+            <b>Fanshawe College</b><br>
+            <b>Advanced Diploma — Computer Programming and Analysis</b><br>
+            <i>September 2021 - december 2024</i>
+          </p>
+          <br>
+          <p>
+            <b>St. Clair College</b><br>
+            <b>Diploma — Business Accounting</b><br>
+            <i>September 2018 - September 2020</i>
+          </p>
+        </div>
+      </div>
+      <div class="skill-dropdown">
+        <button class="dropdown-btn">Work Experience</button>
+        <div class="dropdown-content">
+          <p>
+            <b>Costco, Windsor, Ontario</b><br>
+            <b>Stocker</b><br>
+            <i>October 2025 - Present</i><br>
+             - Assist customers with questions and concerns. <br> - Restock shelves after store close. <br> - Collaborate with coworkers to complete tasks efficiently and on time. <br> - Ensure aisles remain clean, organized, and safe.
+          </p>
+          <br>
+          <p>
+            <b>Tim Hortons, Harrow, Ontario</b><br>
+            <b>Team Member</b><br>
+            <i>Feb 2022 - May 2022</i><br>
+            - Prepared customer drink orders accurately and efficiently. <br> - Took customer orders using in-store computer systems. <br> - Collaborated with coworkers to prevent duplicate orders. <br> - Maintained a clean and sanitary food-handling workspace.
+        </div>
+      </div>
+    </section>
+  </div>
+
+  
+  <section id="about me" class="far-right">
+    <h1>Ty Carpenter</h1>
+    <br>
+    <h2>990 Lauzon Rd, Windsor, Ontario</h2>
+    <h2><a class="link" href="tel:+15195639077">(519) 563-9077</a></h2>
+    <h2><a class="link" href="mailto:TyCarpenter79@gmail.com" target="_blank">TyCarpenter79@gmail.com</a></h2>
+    <h2><a class="link" href="https://github.com/TyCarpenter79" target="_blank">github: TyCarpenter79</a></h2>
+    <br>
+    </section>
+
+  <script>
+    const tooltip = document.querySelectorAll(".tooltiptext");
+    const header = document.querySelector(".header");
+    const dropdownButtons = document.querySelectorAll(".dropdown-btn");
+    const moonIcon = document.querySelector(".moon-icon-holder");
+    const sunIcon = document.querySelector(".sun-icon-holder");
+    const html = document.documentElement;
+
+    // Sidebar buttons -> panels navigation
+    const sidebarButtons = document.querySelectorAll('.sidebar-btn');
+    const panels = document.querySelectorAll('.right-panels .panel');
+
+    // Add a mousemove event listener to the window
+    window.addEventListener('mousemove', (event) => {
+        // Get the horizontal and vertical coordinates of the mouse
+        const mouseX = event.clientX;
+        const mouseY = event.clientY;
+
+        // Update the follower element's position
+        // We use transform for smoother performance and to center the element (as defined in CSS)
+        tooltip.forEach(tip => {
+          tip.style.left = mouseX + 20 + 'px';
+          tip.style.top = mouseY + 'px';
+        });
+    });
+
+    dropdownButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        let content = btn.nextElementSibling;
+
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+
+    function setActivePanel(id) {
+      const target = document.getElementById(id);
+      const isHidden = target && target.classList.contains('hidden');
+
+      // hide all panels and clear active button state
+      panels.forEach(p => p.classList.add('hidden'));
+      sidebarButtons.forEach(b => b.classList.remove('active'));
+
+      // If the clicked panel wasn't active, show it and mark the button
+      if (isHidden && target) {
+        target.classList.remove('hidden');
+        const btn = Array.from(sidebarButtons).find(b => b.dataset.target === id);
+        if (btn) btn.classList.add('active');
+      }
+    }
+
+    sidebarButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.target;
+        if (target) setActivePanel(target);
+      });
+      btn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
+      });
+    });
+
+    function toggleTheme() {
+      const dark = html.classList.toggle("dark-theme");
+      if (dark) {
+        moonIcon.classList.add("hidden");
+        sunIcon.classList.remove("hidden");
+        localStorage.setItem("theme", "dark");
+      } else {
+        sunIcon.classList.add("hidden");
+        moonIcon.classList.remove("hidden");
+        localStorage.setItem("theme", "light");
+      }
+    }
+
+    function animateIcon(icon) {
+      icon.style.transform = "rotate(180deg)";
+      setTimeout(() => (icon.style.transform = "rotate(0deg)"), 300);
+    }
+
+    moonIcon.addEventListener("click", () => {
+      animateIcon(moonIcon);
+      toggleTheme();
+    });
+
+    sunIcon.addEventListener("click", () => {
+      animateIcon(sunIcon);
+      toggleTheme();
+    });
+
+    moonIcon.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        moonIcon.click();
+      }
+    });
+
+    sunIcon.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        sunIcon.click();
+      }
+    });
+
+    // Load saved theme
+    const saved = localStorage.getItem("theme");
+    if (saved === "dark") {
+      html.classList.add("dark-theme");
+      moonIcon.classList.add("hidden");
+      sunIcon.classList.remove("hidden");
+    } else {
+      html.classList.remove("dark-theme");
+      moonIcon.classList.remove("hidden");
+      sunIcon.classList.add("hidden");
+    }
+  </script>
+</body>
+</html>
